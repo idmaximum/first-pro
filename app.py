@@ -24,4 +24,5 @@ def show_post(post_id):
     # show the post with the given id, the id is an integer
     return 'Post %d' % post_id
 
-app.run(port=5000)
+if __name__ == '__main__': 
+    app.run(debug=True)  # important to mention debug=True
